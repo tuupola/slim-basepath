@@ -35,6 +35,7 @@ $ curl http://192.168.51.60/test/bar
 /test/bar
 $ curl http://192.168.51.60/test/foo
 /test/foo
+```
 
 I guess one could argue that it is expected behaviour when `$app->setBasePath("/test");` is used. However if this call is removed given routes become broken:
 
