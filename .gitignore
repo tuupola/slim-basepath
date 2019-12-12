@@ -1,0 +1,8 @@
+.env
+vendor/
+.vagrant/
+.phplint-cache
+report/
+coverage.xml
+composer.lock
+
