@@ -6,10 +6,12 @@ ini_set("display_errors", 1);
 
 require __DIR__ . "/vendor/autoload.php";
 
-use Slim\Factory\AppFactory;
-
-$app = AppFactory::create();
-$app->setBasePath("/test");
+$app = new \Slim\App([
+    "settings" => [
+        "displayErrorDetails" => true,
+        "addContentLengthHeader" => false,
+    ]
+]);
 
 $app->get("/", function ($request, $response, $arguments) {
     $path = $request->getUri()->getPath();
