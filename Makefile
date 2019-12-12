@@ -17,8 +17,8 @@ lint: vendor
 	vendor/bin/phpcs -p --standard=PSR2 --extensions=php --encoding=utf-8 --ignore=*/vendor/*,*/benchmarks/* .
 
 clean:
-	rm -rf vendor
-	rm composer.lock
+	-rm -rf vendor
+	-rm composer.lock
 
 slim-4:
 	make clean
