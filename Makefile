@@ -25,9 +25,14 @@ slim-4:
 	git checkout slim-4
 	make vendor
 
+slim-4-nyholm:
+	make clean
+	git checkout slim-4-nyholm
+	make vendor
+
 slim-3:
 	make clean
 	git checkout slim-3
 	make vendor
 
-.PHONY: help slim-3 slim-4 clean
+.PHONY: help slim-3 slim-4 slim-4-nyholm clean
