@@ -30,6 +30,11 @@ slim-4-nyholm:
 	git checkout slim-4-nyholm
 	make vendor
 
+slim-4-diactoros:
+	make clean
+	git checkout slim-4-diactoros
+	make vendor
+
 slim-3:
 	make clean
 	git checkout slim-3
